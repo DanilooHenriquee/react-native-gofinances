@@ -11,7 +11,7 @@ import {
 } from "@expo-google-fonts/poppins";
 
 import theme from "./src/global/styles/theme";
-import { Dashboard } from "./src/screens/Dashboard";
+import { Register } from "./src/screens/Register";
 
 export default function App() {
 
@@ -44,11 +44,11 @@ export default function App() {
     return (
         <ThemeProvider theme={theme}>
 			<StatusBar
-				backgroundColor="transparent"
-				translucent
-				barStyle="light-content"
+				backgroundColor={ theme.colors.primary }
+				barStyle="dark-content"
 			/>
-            <Dashboard />
+			
+            <Register />
         </ThemeProvider>
     );
 }
