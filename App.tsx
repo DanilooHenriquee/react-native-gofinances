@@ -3,6 +3,9 @@ import { ThemeProvider } from "styled-components";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from 'react-native';
 
+import 'intl';
+import 'intl/locale-data/jsonp/pt-BR';
+
 import {
     useFonts,
     Poppins_400Regular,
