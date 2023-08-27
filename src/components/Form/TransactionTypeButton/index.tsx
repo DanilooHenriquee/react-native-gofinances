@@ -3,6 +3,7 @@ import { TouchableOpacityProps } from "react-native";
 
 import { 
     Container,
+    Button,
     Icon,
     Title,
 } from "./styles";
@@ -28,16 +29,19 @@ export function TransactionTypeButton({
         <Container 
             isActive={isActive}
             type={type}
-            {...rest}
         >
-            <Icon 
-                name={icons[type]}
-                type={type}
-            />
+            <Button
+                {...rest}
+            >
+                <Icon 
+                    name={icons[type]}
+                    type={type}
+                />
 
-            <Title>
-                {title}
-            </Title>
+                <Title>
+                    {title}
+                </Title>
+            </Button>
         </Container>
     )
 }
