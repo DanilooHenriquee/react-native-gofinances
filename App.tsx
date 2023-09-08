@@ -51,8 +51,8 @@ export default function App() {
         <ThemeProvider theme={theme}>
 			<NavigationContainer>			
 				<StatusBar
-					backgroundColor={ theme.colors.primary }
-					barStyle="dark-content"
+					backgroundColor={theme.colors.primary}
+					barStyle="light-content"
 				/>
 				<AppRoutes />
 			</NavigationContainer>
